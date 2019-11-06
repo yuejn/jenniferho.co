@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+}
+
+body {
+  font: 110% 'Futura', 'Trebuchet MS', 'Century Gothic', sans-serif;
+  background: #f9f9f9;
+  color: #222;
+  text-transform: lowercase;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 2px solid;
+}
+
+nav a {
+  border: 0;
+}
+
+a:hover {
+  background: #F4E900;
+}
+
+abbr {
+  border-bottom: 2px dotted;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  margin: 0.2em 1.325em;
+  content: "\2218";
+}
+
+main, aside, nav {
+  margin: 0 1em;
+  padding: 1em;
+}
+
+main:first-child {
+  margin-top: 1em;
+}
+
+footer {
+  border-top: 1px solid #EFEFEF;
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+details {
+  font-size: 0.9em;
+}
+
+summary {
+  font-weight: bold;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px dashed #ccc;
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+.small {
+  font-size: 0.7em;
+}
+
+.hidden {
+  display: none;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 23.333%;
+  margin: 0 10px 10px 0
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+@media screen and (min-device-width: 768px) {
+  body {
+    font-size: 120%;
+  }
+  section {
+    width: 70%;
+    max-width: 1024px;
+  }
+  #bts section {
+    width: 100%;
+    max-width: 100%;
+  }
+}
