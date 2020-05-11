@@ -1,17 +1,28 @@
 // external js: masonry.pkgd.js, imagesloaded.pkgd.js
 
 // init Masonry
-const grid = document.querySelector('.grid');
 
-const msnry = new Masonry( grid, {
-  itemSelector: '.grid-item',
-  columnWidth: '.grid-sizer',
-  percentPosition: true
-});
+window.onload = function(){
+  const grid = document.querySelector('.grid');
 
-imagesLoaded( grid ).on( 'progress', function() {
-  // layout Masonry after each image loads
-  msnry.layout();
-});
+  const msnry = new Masonry( grid, {
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true
+  });
 
-console.log('hello')
+  imagesLoaded( grid ).on( 'progress', function() {
+    // layout Masonry after each image loads
+    msnry.layout();
+  });
+}
+
+// // init Masonry
+// var $grid = $('.grid').masonry({
+//   // options...
+// });
+// // layout Masonry after each image loads
+// $grid.imagesLoaded().progress(function () {
+//   $grid.masonry('layout');
+// });
+
