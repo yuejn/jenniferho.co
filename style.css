@@ -76,6 +76,10 @@ h1 {
   margin-bottom: 1em;
 }
 
+h1 a { 
+  border-bottom: none;
+}
+
 h2 {
   font-size: 1.2em;
 }
